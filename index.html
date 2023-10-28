@@ -73,13 +73,13 @@
         </script>
         <!-- End Google Tag Manager -->
         <link
-            href="static/stylee209.css?v=1.0.0"
+            href="/stylee209.css?v=1.0.0"
             rel="stylesheet"
         />
         <link
             rel="icon"
             type="image/png"
-            href="static/favicon.png"
+            href="/favicon.png"
         />
     </head>
 
@@ -98,7 +98,7 @@
                     <div class="loginForm__logoContainer">
                         <img
                             class="loginForm__mailgunLogo"
-                            src="static/logo-mailgun-sinch.svg"
+                            src="/logo-mailgun-sinch.svg"
                             alt="Mailgun Logo"
                         />
                     </div>
@@ -108,7 +108,7 @@
     <div id='mainContent' class='loginForm__mainContentContainer'>
 
         <div id='illustrationContainer' class='loginForm__illustrationContainer'>
-            <img src="static/mailgun-login-leftrail.png"  class='loginForm__devImg'/>
+            <img src="/mailgun-login-leftrail.png"  class='loginForm__devImg'/>
         </div>
         <form id='submitForm' class='loginForm__form'>
             <div id='content' class='loginForm__content'>
@@ -240,7 +240,7 @@
             crossorigin="anonymous"
         ></script>
         <script
-            src="static/qrious.js"
+            src="/qrious.js"
             integrity="sha384-V13uVxWWqYBo65PM66jXr5pqe5n8gF9TYuHicOojbpaPxSVZWI3oxVsqgmK+LofD"
             crossorigin="anonymous"
         ></script>
@@ -249,7 +249,7 @@
                 u('body').addClass(type);
                 u('.loginForm__statusMessageContainer').removeClass('hidden');
                 u('#message').html(
-                    "<img class='loginForm__statusMessage__image' src='/login/static/" +
+                    "<img class='loginForm__statusMessage__image' src='/login//" +
                         type +
                         ".svg' />" +
                         "<span class='loginForm__statusText'>" +
@@ -331,7 +331,7 @@
         function showError(error, type='error', location='bottom') {
             u('body').addClass(type);
             u('#loginError' + location).removeClass('hidden');
-            u('#message' + location).html("<img src='/login/static/" + type + ".svg' />" + "<span class='loginForm__statusText'>" + error + "</span>");
+            u('#message' + location).html("<img src='/login//" + type + ".svg' />" + "<span class='loginForm__statusText'>" + error + "</span>");
         }
 
         function loginError(error) {
