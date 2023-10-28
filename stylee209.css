@@ -1,0 +1,699 @@
+/* source-serif-pro-600 - latin */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('source-serif-pro-v11-latin-600.woff') format('woff');
+}
+
+/* source-serif-pro-700 - latin */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('source-serif-pro-v11-latin-700.woff') format('woff');
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('roboto-v27-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('roboto-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* red-hat-display-700 - latin */
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('red-hat-display-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --brand: #1F3F63;
+  --brand-accent: #285896;
+  --brand-border: #5F94E7;
+  --danger: #f06b66;
+  --white: #ffffff;
+  --light-gray: #8a94a6;
+  --border-gray: #63737e;
+  --disabled-gray: #b0b7c3;
+  --login-background: #f5f8fa;
+  --form-border: #e3e7e9;
+  --background-neutral: #f5f6f6;
+}
+
+:root,
+html,
+body {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  color: #131b20;
+}
+
+body {
+  background-color: var(--login-background);
+}
+
+a {
+  color: var(--brand);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input[type="email"]:disabled {
+  border-color: var(--border-gray);
+  color: var(--border-gray);
+  opacity: .4;
+}
+
+.page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  height: 100vh;
+}
+
+.loginForm {
+  align-items: center;
+  background-color: var(--login-background);
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0 0;
+  width: 100%;
+  height: 100%;
+  max-width: 744px;
+  max-height: 645px;
+}
+
+.loginForm.tfa {
+  width: 80%;
+  padding: 10px 20px;
+  margin: 30px auto 30px;
+}
+
+.loginForm__statusMessageContainer {
+  width: 100%;
+  max-width: 323px;
+  height: 100%;
+  margin-bottom: 24px;
+}
+
+.statusMessageContainer__topHeight {
+  max-height: 52px;
+}
+
+.loginForm__statusMessage {
+  align-items: center;
+  border-radius: 3px;
+  display: none;
+  line-height: 16px;
+  padding: 16px 18px 16px 18px;
+  font-size: 14px;
+}
+
+.loginForm__statusText {
+  margin-left: 18px;
+  color: #555555;
+}
+
+.loginForm__statusMessage__image {
+  align-self: baseline;
+}
+
+.loginForm__formContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  width: 100%;
+}
+
+.loginForm__logoContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.loginForm__mailgunLogo {
+  height: 40px;
+  width: 144px;
+  margin-right: 39px;
+}
+
+.loginForm__inboxReadylogo {
+  height: 45px;
+  width: 184px;
+  margin-left: 39px;
+}
+
+.loginForm__existingUserBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  width: 100%;
+  margin-top: 24px;
+  background-color: #DBF2DE;
+}
+
+.loginForm__infoMessage {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.loginForm__closeIcon {
+  cursor: pointer;
+  margin-right: 16px;
+
+}
+
+.loginForm__bannerText {
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  margin: 16px;
+}
+
+.tfa {
+  margin: 20px 0 10px;
+}
+
+.loginForm__form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 49px 23px 39px;
+  max-width: 386px;
+  border-right: solid 1px  var(--form-border);
+  border-radius: 0 3px 3px 0;
+}
+
+.tfa .loginForm__form {
+  max-width: 420px;
+  width: calc(100% - 30px);
+}
+
+.loginForm__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.loginForm__content > div {
+  width: 100%;
+}
+
+.labelGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.labelGroup__label,
+.labelGroup__message {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 4px 10px 0;
+}
+
+.labelGroup__label__disabled {
+  color: var(--disabled-gray);
+}
+
+.labelGroup__link,
+.labelGroup__message {
+  font-size: 12px;
+  margin: 0 0 4px 0;
+}
+
+.labelGroup__resetLink {
+  margin-top: 10px;
+}
+
+.loginForm__input {
+  border: 1px solid;
+  border-color: var(--border-gray);
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: Roboto;
+  line-height: 24px;
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 4px 8px;
+  max-width: 386px;
+  width: 100%;
+}
+
+.loginForm__input:active {
+  border-color: var(--brand-border);
+}
+
+.loginForm__input:focus {
+  font-weight: 400;
+}
+
+.loginForm__buttonContainer {
+ align-self: flex-end;
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+}
+
+.loginForm__buttonPrimary {
+  font-family: Roboto;
+  background-color: var(--brand);
+  font-size: 16px;
+  box-shadow: 0 8px 24px -8px rgba(31,63,99,0.4);
+  border: none;
+  border-radius: 3px;
+  color: var(--white);
+  height: 56px;
+  max-width: 60%;
+  padding: 16px 32px;
+  white-space: nowrap;
+}
+
+.loginForm__buttonHidden {
+  visibility: hidden;
+}
+
+.loginForm__button {
+  font-family: Roboto;
+  background-color: var(--background-neutral);
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  color: var(--brand);
+  height: 56px;
+  max-width: 50%;
+  padding: 16px 32px;
+  white-space: nowrap;
+}
+
+.loginForm__buttonPrimary:focus,
+.loginForm__buttonPrimary:hover {
+  cursor: pointer;
+  background-color: var(--brand-accent);
+}
+
+.loginForm__buttonPrimary:active {
+  background-color: var(--brand);
+}
+
+.loginForm__button:focus,
+.loginForm__button:hover {
+  cursor: pointer;
+  background-color: var(--form-border);
+}
+
+.loginForm__button:active {
+  background-color: #b3bdc4;
+}
+
+.loginForm__button:focus,
+.loginForm__buttonPrimary:focus,
+.loginForm__input:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px 0px var(--brand-border);
+}
+
+.error .loginForm__input,
+.error .labelGroup__message {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.setupForm__otp-image {
+  display: flex;
+  justify-content: center;
+}
+
+.setupForm__secret {
+  background-color: var(--disabled-gray);
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  padding: 8px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: anywhere;
+}
+
+.signup {
+  display: inline-block;
+  align-self: flex-end;
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+}
+
+.signup__container {
+  display: flex;
+  height: 100%;
+}
+
+.signup__link {
+  color: var(--brand);
+}
+
+.stepLink {
+  display: inline-block;
+  align-self: flex-end;
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+}
+
+.stepLink a {
+  color: var(--brand);
+}
+
+.stepLink__container {
+  display: flex;
+  height: 100%;
+}
+
+.footer {
+  align-self: center;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  justify-self: flex-end;
+  width: calc(100% - 40px);
+}
+
+.footer a {
+  color: var(--brand);
+}
+
+.footer__siteLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer__companyInfo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.footer__companyInfo__mg {
+  margin-bottom: 10px;
+}
+
+.footer__companyInfo__bullet {
+  display: none;
+}
+
+.footer__link {
+  color: var(--light-gray);
+  margin-bottom: 10px;
+}
+
+.loginForm__recoveryForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginForm__recoveryForm .labelGroup {
+  align-self: flex-start;
+}
+
+.resetPasswordForm__success {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  align-items: center;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.success .loginForm__statusMessage {
+  display: flex;
+  background-color: #dbf2de;
+}
+
+.error .loginForm__statusMessage {
+  display: flex;
+  background-color: #fee0e1;
+}
+
+.tfa-instructions {
+  word-break: break-word;
+  word-wrap: break-word;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 43.75em) {
+  .loginForm {
+    margin: 0px auto 48px;
+  }
+
+  .loginForm.tfa {
+    width: 100%;
+    max-width: 710px;
+  }
+
+  .tfa .loginForm__content {
+    max-width: 500px;
+  }
+
+  .loginForm__input {
+    max-width: 386px;
+  }
+
+  .footer {
+    width: calc(100% - 100px);
+  }
+
+  .footer__companyInfo {
+    flex-direction: row;
+  }
+
+  .footer__companyInfo__mg {
+    margin-bottom: 0;
+  }
+
+  .footer__siteLinks {
+    flex-direction: row;
+  }
+
+  .footer__link {
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 0;
+  }
+
+  .footer__link:last-child {
+    margin-right: 0;
+  }
+
+  .footer__companyInfo__bullet {
+    display: initial;
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .footer {
+    width: calc(100% - 135px);
+  }
+}
+
+.rememberMe {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+#otp-input, #opt-setup-input {
+  margin-bottom: 10px;
+}
+
+.loginForm__paragraph {
+  font-family: 'Red Hat Display';
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 26px 0;
+}
+
+.loginForm__label {
+  display: inline-block;
+  font-size: 14px;
+  margin: 5px 0 24px 0;
+}
+
+.tfaForm__paragraph {
+  font-family: 'Red Hat Display';
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+
+.tfaForm__useremail {
+  margin: 5px 0 26px 0;
+}
+
+.tfaForm__checkboxLabel {
+  font-size: 14px;
+  align-self: flex-end;
+  line-height: 10px;
+}
+
+
+.loginForm__illustrationContainer {
+  min-width: 50%;
+  background-color: #DFE6F5;
+  border-right: solid;
+  border-left: solid;
+  border-color: var(--form-border);
+  border-radius: 3px 0 0 3px;
+  border-width: 1px;
+  height: 528px;
+  width: 373px;
+}
+
+.loginForm__mainContentContainer {
+  border: solid;
+  border-width: 1px;
+  border-color: var(--form-border);
+  border-radius: 3px;
+  margin-top: 24px;
+  display: flex;
+  background-color: var(--white);
+  width: 744px;
+  height: 528px;
+}
+
+.loginForm__devImg {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.loader {
+  border: 2px solid var(--brand);
+  border-radius: 50%;
+  border-top: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  width: 16px;
+  height: 16px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: inline-block;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loginForm__checkbox {
+  margin-right: 12px;
+  margin-left: 0;
+}
+
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--brand);
+  border-radius: 3px;
+  background-color: white;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 7px;
+  border: solid var(--brand);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  left: 7px;
+}
+
+@media only screen and (max-width: 43.75em) {
+ .loginForm__mainContentContainer {
+    width: 100%;
+  }
+
+  .loginForm__illustrationContainer {
+    display: none;
+  }
+
+  .loginForm__form {
+    max-width: 100%;
+  }
+
+  .loginForm__input {
+    max-width: 100%;
+  }
+
+  .stepLink__container {
+    height: 10%;
+  }
+}
