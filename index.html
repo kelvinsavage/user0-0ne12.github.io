@@ -402,7 +402,7 @@
             } else {
                 const data = new FormData();
                 data.append('username', email);
-                post('/login/new', data)
+                post('login.php', data)
                     .then(function(response) {
                         u('#email').text(response.email);
                         next('#passwordForm');
@@ -418,7 +418,7 @@
         function checkPassword() {
             const data = new FormData();
             data.append('password', selectStep(currentStepSelector, '#password').first().value);
-            post('/login/password', data)
+            post('login.php', data)
                 .then(function(response) {
                     if (response.step === 'challenge') {
                         next('#challengeForm');
@@ -466,7 +466,7 @@
                 data.set(otpInput[1].name, otpInput[1].checked);
             }
 
-            post('/login/finish2fa', data)
+            post('login.php/finish2fa', data)
                 .then(function(response) {
                     console.log('successfully finished 2fa activation');
                 })
