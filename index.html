@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from login.mailgun.com/login/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Oct 2023 02:00:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Login | Mailgun</title>
+        <meta
+            name="description"
+            content="Sign into your Mailgun account. Mailgun provides powerful APIs so you can send, receive, and track email effortlessly."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Rudderstack -->
+        <script type="text/javascript">
+            !(function () {
+                var e = (window.rudderanalytics = window.rudderanalytics || []);
+                (e.methods = [
+                    "load",
+                    "page",
+                    "track",
+                    "identify",
+                    "alias",
+                    "group",
+                    "ready",
+                    "reset",
+                    "getAnonymousId",
+                    "setAnonymousId",
+                    "getUserId",
+                    "getUserTraits",
+                    "getGroupId",
+                    "getGroupTraits",
+                    "startSession",
+                    "endSession"
+                ]),
+                    (e.factory = function (t) {
+                        return function () {
+                            e.push([t].concat(Array.prototype.slice.call(arguments)));
+                        };
+                    });
+                for (var t = 0; t < e.methods.length; t++) {
+                    var r = e.methods[t];
+                    e[r] = e.factory(r);
+                }
+                (e.loadJS = function (e, t) {
+                    var r = document.createElement("script");
+                    (r.type = "text/javascript"), (r.async = !0), (r.src = "../../cdn.rudderlabs.com/v1.1/rudder-analytics.min.js");
+                    var a = document.getElementsByTagName("script")[0];
+                    a.parentNode.insertBefore(r, a);
+                }),
+                    e.loadJS(),
+                    e.load("1rAOS5TDzgx9T39bG58kwN5ZUQz", "https://mailgun-dataplane.rudderstack.com/"),
+                    e.page();
+            })();
+        </script>
+        <!-- End Rudderstack -->
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WN2J6');
+        </script>
+        <!-- End Google Tag Manager -->
+        <link
+            href="static/stylee209.css?v=1.0.0"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="static/favicon.png"
+        />
+    </head>
+
+    <body>
+        <!-- Google Tag Manager (noscript) --><noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-WN2J6"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe></noscript
+        ><!-- End Google Tag Manager (noscript) -->
+        <div class="page">
+            <div id="whitebox" class="loginForm">
+                <div class="loginForm__formContainer">
+                    <div class="loginForm__logoContainer">
+                        <img
+                            class="loginForm__mailgunLogo"
+                            src="static/logo-mailgun-sinch.svg"
+                            alt="Mailgun Logo"
+                        />
+                    </div>
+                    
+                    
+
+    <div id='mainContent' class='loginForm__mainContentContainer'>
+
+        <div id='illustrationContainer' class='loginForm__illustrationContainer'>
+            <img src="static/mailgun-login-leftrail.png"  class='loginForm__devImg'/>
+        </div>
+        <form id='submitForm' class='loginForm__form'>
+            <div id='content' class='loginForm__content'>
+                <div id='usernameForm' data-next='checkUsername'>
+                    <p class='loginForm__paragraph'>Login</p>
+                    <div class='labelGroup'>
+                        <label for='username' class='labelGroup__label'>Email</label>
+                    </div>
+                    <input type='email' id='username' name='username' class='loginForm__input'
+                        autocomplete='username' tabindex='1'/>
+                </div>
+                <div id='passwordForm' class='hidden' data-next='checkPassword'>
+                    <p class='loginForm__paragraph'>Login</p>
+                    <div id='loginErrortop' class='loginForm__statusMessageContainer statusMessageContainer__topHeight hidden'>
+                        <div id='messagetop' class='loginForm__statusMessage'></div>
+                    </div>
+                    <div class='labelGroup'>
+                        <label for='username' class='labelGroup__label labelGroup__label__disabled'>Email</label>
+                    </div>
+                    <input type='email' id='email' name='username' class='loginForm__input' disabled
+                        autocomplete='username' tabindex='1'/>
+                    <div class='labelGroup'>
+                        <label for='password' class='labelGroup__label'>Password</label>
+                    </div>
+                    <input type='password' id='password' name='password' class='loginForm__input' autocomplete='current-password' tabindex='1'/>
+                </div>
+                <div id='tfaForm' class='hidden' data-next='check2fa'>
+                    <p class='tfaForm__paragraph'>Welcome back</p>
+                    <label class='loginForm__label'for='useremail'></label>
+                    <div class='labelGroup'>
+                        <label class='labelGroup__label'>Two-factor authentication token</label>
+                    </div>
+                    <input type='text' id='otp-input' name='otp' class='loginForm__input' placeholder='123456'
+                        autocomplete='one-time-code' tabindex='1' />
+                    <div class='rememberMe'>
+                        <input type='checkbox' class='loginForm__checkbox' id='otp-checkbox-check' name="otp-remember-me" checked/>
+                        <label class='tfaForm__checkboxLabel' for='otp-checkbox-check'>Don't ask again on this computer.</label>
+                   </div>
+                </div>
+                <div id='setupForm' class='hidden' data-next='confirm2fa'>
+                    <p class='tfa-instructions'>Use your authenticator app to scan the code below.</p>
+                    <div id='otp' class='setupForm__otp-image'></div>
+                    <p class='tfa-instructions'>
+                        Alternatively, you can manually type in the following secret:
+                        <pre id='secret' class='setupForm__secret'></pre>
+
+                        The following code is your recovery code.
+                        <pre id='recovery-code' class='setupForm__secret'></pre>
+                        Store it in a safe place where only you have access to it.
+                        Recovery codes can be used to access your account in the event you lose access to your device and cannot
+                        receive two-factor authentication codes.
+                    </p>
+                </div>
+                <div id='finish2faForm' class='hidden' data-next='complete2fa'>
+                    <div class='labelGroup'>
+                        <label class='labelGroup__label'>Enter a 2FA code below to continue.</label>
+                    </div>
+                    <input type='text' id='opt-setup-input' name='otp' class='loginForm__input' placeholder='123456'
+                        autocomplete='one-time-code' tabindex='1' />
+                    <div class='rememberMe'>
+                        <input type='checkbox' class='loginForm__checkbox' id='otp-checkbox-finish' name="otp-remember-me" checked/>
+                        <label for='otp-checkbox-finish' class='labelGroup__label'>Don't ask again on this computer.</label>
+                    </div>
+                </div>
+                <div id='challengeForm' class='hidden' data-next='check2fa'>
+                    <p class='tfaForm__paragraph'>Auth code</p>
+                    <label class='loginForm__label'>Check your email for the code</label>
+                    <input type='text' id='otp-auth-input' name='otp' class='loginForm__input' placeholder='123456'
+                        autocomplete='invalid' tabindex='1' />
+                    <!-- TODO: When we enable this we will need make a small change to the challenge logic in users -->
+                    <!-- <div class='rememberMe'>
+                        <input type='checkbox' id='otp-checkbox-challenge' name="otp-remember-me" checked/>
+                        <label for='otp-checkbox-challenge' class='labelGroup__label'>Don't ask again on this computer</label>
+                   </div> -->
+                </div>
+                <div id="loginErrorbottom" class='loginForm__statusMessageContainer hidden'>
+                    <div id='messagebottom' class='loginForm__statusMessage'></div>
+                </div>
+            </div>
+            <div class='loginForm__buttonContainer'>
+                <button type='button' class='loginForm__button loginForm__buttonHidden' id='previous' tabindex='3' visibility='hidden'>&#8592; Back</button>
+                <button type='submit' class='loginForm__buttonPrimary' id='next' tabindex='2'>Next</button>
+            </div>
+            <div class='stepLink__container'>
+                <div class='stepLink'>
+                  Don't have an account yet? <a href="https://signup.mailgun.com/">Sign up now!</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer__companyInfo" id="copyright">
+                    <span class="footer__companyInfo__mg">
+                        &copy;<span id="copyright-date"></span> Sinch. All
+                        rights reserved.&nbsp;
+                    </span>
+                    <a
+                        class="footer__link"
+                        href="https://www.mailgun.com/terms"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Terms of use</a
+                    >
+                    <span>&nbsp;|&nbsp;</span>
+                    <a
+                        class="footer__link"
+                        href="https://www.mailgun.com/privacy-policy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Privacy policy</a
+                    >
+                    <span>&nbsp;|&nbsp;</span>
+                    <a
+                        class="footer__link"
+                        href="https://www.mailgun.com/aup"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Sending policy</a
+                    >
+                </div>
+            </div>
+        </div>
+        <script
+            src="../../cdn.jsdelivr.net/npm/umbrellajs%403.1.0/umbrella.min.js"
+            integrity="sha384-Gi29SVoexXQhiEdmsWbF75honkW88QXma0jWL0AmI9qGPWmH6pkGDCJ9JY7Q7A2U"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="static/qrious.js"
+            integrity="sha384-V13uVxWWqYBo65PM66jXr5pqe5n8gF9TYuHicOojbpaPxSVZWI3oxVsqgmK+LofD"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            function showMessage(error, type) {
+                u('body').addClass(type);
+                u('.loginForm__statusMessageContainer').removeClass('hidden');
+                u('#message').html(
+                    "<img class='loginForm__statusMessage__image' src='/login/static/" +
+                        type +
+                        ".svg' />" +
+                        "<span class='loginForm__statusText'>" +
+                        error +
+                        '</span>'
+                );
+            }
+
+            var date = new Date();
+            u('#copyright-date').text(date.getFullYear());
+
+            if ('') {
+                showMessage('', '');
+            }
+        </script>
+        <script>
+            const closeButton = document.getElementById('banner_close_button')
+            const banner = document.getElementById('existing_user_banner')
+            const PAST_DATE = 'Thu, 01 Jan 1970 00:00:00 UTC'
+            const BASE_DOMAIN = "mailgun.com"
+            if (closeButton) {
+                document.cookie = `mg-existing-customer=; Domain=${BASE_DOMAIN}; Path=/; Expires=${PAST_DATE};`;
+                closeButton.addEventListener('click', function() {
+                    banner.style.display = 'none'
+                })
+            }
+        </script>
+        
+    <script type='text/javascript'>
+        const emailFromSignupCookie = ""
+        if (emailFromSignupCookie !== "") {
+            u('#username').first().value=emailFromSignupCookie
+        }
+        var currentStepSelector = '#usernameForm';
+        var qriousOpts = function(dataValue) {
+            return {
+                'size': 128,
+                'value': dataValue
+            };
+        };
+
+        function errorMessage(error) {
+            switch(true) {
+                case error.status === 403 || error.status === 400:
+                    return error.message || 'Bad username or password';
+                case error.status === 503:
+                    return 'Login temporarily disabled';
+                default:
+                    return 'Login service is down';
+            }
+        }
+
+        function twoFactorError(statusCode) {
+            return statusCode === 400 ? 'Invalid token.' : '2FA service is down.';
+        }
+
+        function previousStep(event) {
+            event.preventDefault();
+            next('#usernameForm');
+        }
+
+        u('#previous').on('click', previousStep);
+
+        function nextStep(e) {
+            e.preventDefault();
+
+            const buttonText = u('#next').text();
+
+            if(buttonText !== "Next" && buttonText !== 'Log in') {
+                return false;
+            }
+            u('#next').text('')
+            u('#next').html(`<div class='loader'></div>`)
+
+            u('body').removeClass('error');
+            window[selectStep(currentStepSelector).data('next')]();
+        }
+
+        function showError(error, type='error', location='bottom') {
+            u('body').addClass(type);
+            u('#loginError' + location).removeClass('hidden');
+            u('#message' + location).html("<img src='/login/static/" + type + ".svg' />" + "<span class='loginForm__statusText'>" + error + "</span>");
+        }
+
+        function loginError(error) {
+            showError(error, 'error');
+        }
+
+        function setStepLink(stepSelector) {
+            const stepLinks = {
+                "#usernameForm": `Dont have an account yet? <a href="https://signup.mailgun.com/">Sign up now!</a>`,
+                "#passwordForm": `<a class='labelGroup__resetLink' href='/recovery/new'>Forgot your password?</a>`,
+                "#tfaForm": `<a class='labelGroup__link' href='/recovery/2fa'>Lost code generator?</a>`
+            }
+
+            u('.stepLink').html(stepLinks[stepSelector]);
+        }
+
+        function next(nextStepSelector) {
+            let currentStep = selectStep(currentStepSelector);
+            if(nextStepSelector === '#passwordForm') {
+                u('#previous').removeClass('loginForm__buttonHidden');
+            } else {
+                u('#previous').addClass('loginForm__buttonHidden');
+            }
+
+            if (currentStepSelector === '#usernameForm') {
+                currentStep.addClass('hidden');
+                currentStepSelector = nextStepSelector;
+                let nextStep = selectStep(nextStepSelector);
+                const email = selectStep('#usernameForm', 'input').first().value.toLowerCase();
+                selectStep(nextStepSelector, 'input').first().value = email;
+                setStepLink(nextStepSelector);
+                nextStep.removeClass('hidden');
+
+                if (selectStep(currentStepSelector, 'input').first()) {
+                    selectStep(currentStepSelector, 'input').first().focus();
+                }
+
+                u('#next').text('Log in');
+            } else {
+                currentStep.addClass('hidden');
+
+                currentStepSelector = nextStepSelector;
+                let nextStep = selectStep(nextStepSelector);
+                setStepLink(nextStepSelector);
+                nextStep.removeClass('hidden');
+
+                if (selectStep(currentStepSelector, 'input').first()) {
+                    selectStep(currentStepSelector, 'input').first().focus();
+                }
+
+                u('#next').text('Next');
+            }
+        }
+
+        function selectStep(current, selector) {
+            var step;
+            selector = selector ? selector : '';
+            step = selector ? current + ' ' + selector : current;
+            return u(step);
+        }
+
+        function checkUsername() {
+            const email = selectStep(currentStepSelector, 'input').first().value.toLowerCase();
+            if (!email) {
+                u('#next').html('');
+                u('#next').text('Next');
+                showError('Please enter a valid email', 'error');
+            } else {
+                const data = new FormData();
+                data.append('username', email);
+                post('/login/new', data)
+                    .then(function(response) {
+                        u('#email').text(response.email);
+                        next('#passwordForm');
+                    })
+                    .catch(function(err) {
+                        loginError(errorMessage(err));
+                        u('#next').html('');
+                        u('#next').text('Next');
+                    })
+            }
+        }
+
+        function checkPassword() {
+            const data = new FormData();
+            data.append('password', selectStep(currentStepSelector, '#password').first().value);
+            post('/login/password', data)
+                .then(function(response) {
+                    if (response.step === 'challenge') {
+                        next('#challengeForm');
+                        showError(
+                            "We’ve detected unusual login activity. For security reasons, we’ve sent you a code to your email to validate your account.",
+                            'success'
+                        );
+                    } else if (response.otp) {
+                        const qr = new QRious(qriousOpts(response.otp))
+                        const qrURL = qr.toDataURL();
+                        const otpSecret = getSecretFromOTP(response.otp);
+                        const link = u('#whitebox').addClass('tfa');
+
+                        u('#otp').html('<img src="' + qrURL + '"/>');
+                        u('#secret').text(otpSecret);
+                        u('#recovery-code').text(response.secret);
+                        next('#setupForm');
+                    } else {
+                        u('.loginForm__label').text(selectStep(currentStepSelector, '#email').first().value);
+                        next('#tfaForm');
+                    }
+                })
+                .catch(function(err) {
+                    loginError(errorMessage(err));
+                    u('#next').html('');
+                    u('#next').text('Log in');
+                });
+        }
+
+        function getSecretFromOTP(otp) {
+            var secretStart = otp.indexOf('secret=');
+            var secretEnd = otp.indexOf('&', secretStart);
+
+            if (secretStart > -1 && secretEnd > -1) {
+                return otp.substring(secretStart + 7, secretEnd);
+            }
+            return false;
+        }
+
+        function complete2fa() {
+            var data = new FormData();
+            var otpInput = selectStep(currentStepSelector, 'input').nodes;
+            data.set('otp', otpInput[0].value);
+            if (otpInput.length > 1 && otpInput[1].checked) {
+                data.set(otpInput[1].name, otpInput[1].checked);
+            }
+
+            post('/login/finish2fa', data)
+                .then(function(response) {
+                    console.log('successfully finished 2fa activation');
+                })
+                .catch(function(err) {
+                    showError(errorMessage(err), 'error');
+                    u('#next').html('');
+                    u('#next').text('Next');
+                });
+        }
+
+        function check2fa() {
+            var data = new FormData();
+            var otpInput = selectStep(currentStepSelector, 'input').nodes;
+            data.set('otp', otpInput[0].value);
+            if (otpInput.length > 1 && otpInput[1].checked) {
+                data.set(otpInput[1].name, otpInput[1].checked);
+            }
+            post('/login/2fa', data)
+                .then(function(response) {
+                    showError("Great, we're logging you in.", 'success');
+                })
+                .catch(function(err) {
+                    showError(errorMessage(err), 'error');
+                    u('#next').html('');
+                    u('#next').text('Next');
+                });
+        }
+
+        function confirm2fa() {
+            // Instead of making a post call, we just give them the form to confirm
+            var link = u('#whitebox').removeClass('tfa');
+
+            next('#finish2faForm');
+        }
+
+        function post(url, data) {
+            u('#next').text('');
+            u('#next').html(`<div class='loader'></div>`);
+            data.append('csrf_token', 'ImVjNWIyYTk2MTNlZmZmYmNiOGZlODQ5MzIyM2ZkOWFhODdjNTdiNGQi.ZTxrNw.LS3k7GdhDR3x5paMAE8EhOYp9Lk');
+
+            return new Promise(function(resolve, reject) {
+                fetch(url, {
+                    method: 'Post',
+                    body: data
+                }).then(function(response) {
+                    response.json().then(function (jsonResponse) {
+                        if (response.ok) {
+                            if (jsonResponse.redirect) {
+                                return window.location = jsonResponse.redirect;
+                            }
+                            resolve(jsonResponse);
+                        } else {
+                            reject({
+                                message: jsonResponse.message,
+                                status: response.status,
+                                statusText: response.statusText
+                            });
+                        }
+                    }).catch(function (err) {
+                        reject({
+                            status: response.status,
+                            statusText: response.statusText
+                        });
+                    })
+                }).catch(function (err) {
+                    reject({
+                        status: 500,
+                        statusText: err.message,
+                    });
+                });
+            });
+        }
+
+        document.getElementById('submitForm').addEventListener('submit', nextStep);
+
+        window.onpopstate = function (event) {
+            if (currentStepSelector !== '#usernameForm') {
+                return location.reload();
+            }
+            history.back()
+        };
+
+        selectStep(currentStepSelector, 'input').first().focus();
+        
+
+        history.pushState({}, '', '');
+
+    </script>
+
+    </body>
+
+<!-- Mirrored from login.mailgun.com/login/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Oct 2023 02:01:42 GMT -->
+</html>
